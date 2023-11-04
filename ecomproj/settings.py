@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     # Custom apps
     'core',
     'home',
+    'admin_user',
+    'user_login',
 ]
 
 MIDDLEWARE = [
@@ -79,8 +81,12 @@ WSGI_APPLICATION = 'ecomproj.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'woodmart',
+        'USER': 'rispa1',
+        'PASSWORD': 'rispa',
+        'HOST': '127.0.0.1',
+        'PORT': '',
     }
 }
 
